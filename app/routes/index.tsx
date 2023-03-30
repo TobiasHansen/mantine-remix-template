@@ -1,4 +1,5 @@
 import { Text, Button, Stack } from "@mantine/core";
+import { Link } from "@remix-run/react";
 
 export default function Index() {
   return (
@@ -6,7 +7,7 @@ export default function Index() {
       <Text size="xl" weight={500}>
         Welcome to Mantine!
       </Text>
-      <Button>Click the button</Button>
+      <Button component={Link} to="page-with-error">Go to page with error</Button>
     </Stack>
   );
 }
